@@ -1,0 +1,230 @@
+:root {
+  --main-green: hsl(174, 86%, 45%);
+  --main-light-gray: hsl(225, 20%, 60%);
+}
+
+* {
+  margin: 0;
+  pad: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  background-color: hsl(230, 100%, 99%);
+}
+
+header {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  background-image: url(/images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-size: 150% contain;
+  background-position-x: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-h1 {
+  color: hsl(227, 35%, 25%);
+  margin-bottom: 0.6rem;
+  background-color: transparent;
+}
+
+.header-p {
+  color: var(--main-light-gray);
+  background-color: transparent;
+}
+
+.container {
+  padding: 2.5rem;
+  background-color: hsl(0, 0%, 100%);
+  width: 55%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid hsl(224, 65%, 95%);
+  box-shadow: 0 0 20px 10px hsl(223, 50%, 87%);
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.price-container-p {
+  color: var(--main-light-gray);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.price-p {
+  color: var(--main-light-gray);
+}
+
+.price-p span {
+  color: hsl(227, 35%, 25%);
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.line {
+  width: 100%;
+  height: 0.6rem;
+  border-radius: 20px;
+  background-color: hsl(224, 65%, 95%);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.line::before {
+  content: '';
+  background-color: hsl(174, 77%, 80%);
+  height: 0.6rem;
+  width: 50%;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.line-ball {
+  content: '';
+  background-image: url(/images/icon-slider.svg);
+  background-color: hsl(174, 86%, 45%);
+  position: absolute;
+  user-select: none;
+  top: 30%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  box-shadow: 0 0 15px 5px hsl(174, 77%, 80%);
+  motion-offset: 0%;
+}
+
+.line-ball:hover {
+  background-color: hsl(174, 77%, 65%);
+}
+
+.line-ball:active {
+  background-color: hsl(174, 86%, 40%);
+  cursor: grabbing;
+}
+
+.billing-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.billing-p {
+  font-size: 12px;
+  color: var(--main-light-gray);
+  margin-right: 10px;
+}
+
+.check {
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: hsl(223, 50%, 87%);
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.check-ball {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: all 0.3s;
+}
+
+.checked {
+  background-color: hsl(174, 77%, 80%);
+}
+
+.checked-ball {
+  left: 20px;
+}
+
+.discount {
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-weight: 800;
+}
+
+.trial-container {
+  background-color: #fff;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 20px 20px 5px hsl(223, 50%, 87%);
+  margin-bottom: 1.5rem;
+}
+
+.trial-container-p {
+  font-size: 12px;
+  color: var(--main-light-gray);
+  font-weight: 600;
+  line-height: 2;
+}
+
+.icon {
+  color: var(--main-green);
+  margin-right: 10px;
+}
+
+.trial-btn {
+  padding: 0.6rem 2.3rem;
+  background-color: hsl(227, 35%, 25%);
+  border-radius: 20px;
+  color: hsl(223, 50%, 87%);
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.trial-btn:hover {
+  color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
